@@ -1,0 +1,162 @@
+:root {
+  --green-color: #057A55;
+  --green-color2: #0E9F6E;
+  --blue-color: #1C64F2;
+  --blue-color2: #3F83F8;
+  --red-color: #E02424;
+  --red-color2: #F05252;
+  --white-color: #ffffff;
+  --gray-color: #F9FAFB;
+  --gray-color2: #F3F4F6;
+}
+
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  font-family: sans-serif;
+  overflow-x: hidden;
+}
+
+.floatModal {
+  margin: auto;
+  border-radius: 6px;
+  border: transparent;
+}
+.floatModal::backdrop{
+  background-color: rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(3px);
+}
+
+.cta__cont {
+  display: flex;
+  height: 200px;
+}
+
+.cta {
+  margin: auto;
+  background-color: var(--green-color);
+  color: var(--white-color);
+}
+
+.cta:hover {
+  background-color: var(--green-color2);
+}
+
+img{
+  /* width: 100%; */
+}
+/* Card Style */
+.card {
+  width: 320px;
+  background-color: var(--gray-color);
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  font-weight: bold;
+}
+
+.card__step {
+  margin-bottom: 6px;
+  font-size: 20px;
+}
+
+.card__label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.card__input {
+  width: 100%;
+  margin: auto;
+  display: block;
+  margin-bottom: 5px;
+  border: none;
+  border-radius: 4px;
+  height: 25px;
+  padding: 3px 6px;
+  outline: none;
+}
+
+.card__textarea {
+  width: 100%;
+  max-width: 100%;
+  min-width: 100%;
+  margin: auto;
+  display: block;
+  margin-bottom: 5px;
+  border: none;
+  border-radius: 4px;
+  height: 150px;
+  max-height: 150px;
+  min-height: 150px;
+  padding: 3px 6px;
+  outline: none;
+}
+
+.card__btn {
+  display: flex;
+  padding-top: 12px;
+}
+
+.btn__next {
+  background-color: var(--blue-color);
+  color: var(--white-color);
+}
+
+.btn__next:hover {
+  background-color: var(--blue-color2);
+}
+.btn__prev {
+  background-color: var(--red-color);
+  color: var(--white-color);
+}
+
+.btn__prev:hover {
+  background-color: var(--red-color2);
+}
+.btn__send {
+  background-color: var(--blue-color);
+  color: var(--white-color);
+}
+
+.btn__send:hover {
+  background-color: var(--blue-color2);
+}
+
+/* Utilitis */
+
+.btn {
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  padding: .5em .8rem;
+  border-radius: .8em;
+  cursor: pointer;
+}
+
+.d-none{
+  display: none;
+}
+
+.flex-jus-end{
+  justify-content: end;
+}
+
+.flex-jus-btw{
+  justify-content: space-between;
+}
+.flex-jus-center{
+  justify-content: center;
+}
+
+.error__inputs{
+  border: 1px solid var(--red-color);
+}
+.t-center{
+  text-align: center;
+}

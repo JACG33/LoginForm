@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./app/assets/css/styles.css">
+  <title>Home page</title>
+
+  <style>
+    .user {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .user__info {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      gap: 6px;
+    }
+
+    .user__actions {
+      display: flex;
+      justify-content: space-evenly;
+    }
+  </style>
+</head>
+
+<body>
+  <dialog class="floatModal" id="floatModal"></dialog>
+  <!-- <div class="floatModal d-none" id="floatModal"></div> -->
+  <div class="cta__cont">
+    <button class="btn cta" id="ctaBtn">Registrase</button>
+  </div>
+
+  <!-- <picture>
+    <source media="(min-width: 1200px)" srcset="./app/assets/img/3.jpg ">
+    <source media="(min-width: 768px)" srcset="./app/assets/img/2.jpg ">
+    <img alt="" src="./app/assets/img/1.jpg">
+  </picture> -->
+
+  <script src="./app/index.js" type="module"></script>
+</body>
+
+</html>
